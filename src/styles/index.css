@@ -8,3 +8,47 @@
   margin: 0;
   padding: 0;
 }
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter,Inter Rg:style=Regular");
+  src: local("Inter Regular");
+  src: local("inter-regular");
+  src: local("InterRegular");
+  src: url("../lib/fonts/Inter-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter,Inter Rg:style=Medium");
+  src: local("Inter Medium");
+  src: local("inter-medium");
+  src: local("InterMedium");
+  src: url("../lib/fonts/Inter-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter,Inter Rg:style=Bold");
+  src: local("Inter Bold");
+  src: local("inter-bold");
+  src: local("InterBold");
+  src: url("../lib/fonts/Inter-Bold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter,Inter Rg:style=ExtraBold");
+  src: local("Inter ExtraBold");
+  src: local("inter-extrabold");
+  src: local("InterExtraBold");
+  src: url("../lib/fonts/Inter-ExtraBold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}

@@ -48,7 +48,7 @@ const Options = ({
 
   return (
     <div className="pb-10 pt-5 px-10">
-      <h4 className="text-gray-800 text-2xl mb-5">Options</h4>
+      <h4 className="text-gray-800 text-2xl mb-5 font-semibold">Options</h4>
       <hr />
       <div className="flex space-x-5 my-5">
         <h4 className="w-40 text-left mt-3">Timer</h4>
