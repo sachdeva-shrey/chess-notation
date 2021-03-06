@@ -1,6 +1,6 @@
 module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
+  purge: ["./components/**/*.tsx"],
+  darkMode: false,
   theme: {
     screens: {
       lg: "1024px",
