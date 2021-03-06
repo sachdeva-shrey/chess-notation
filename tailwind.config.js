@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ["./components/**/*.tsx"],
+  purge: ["./src/components/**/*.tsx"],
   darkMode: false,
   theme: {
     screens: {
