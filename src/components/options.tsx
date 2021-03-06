@@ -47,11 +47,11 @@ const Options = ({
   };
 
   return (
-    <div className="pb-10 pt-5 px-10">
+    <div className="pb-10 pt-5 lg:px-10 mx-5">
       <h4 className="text-gray-800 text-2xl mb-5 font-semibold">Options</h4>
       <hr />
       <div className="flex space-x-5 my-5">
-        <h4 className="w-40 text-left mt-3">Timer</h4>
+        <h4 className="w-40 text-left mt-3 text-gray-700">Timer</h4>
         <h5
           className={`
             ${
@@ -97,7 +97,7 @@ const Options = ({
       </div>
       <div className="mt-6">
         <div className="flex space-x-5 my-5">
-          <h4 className="w-40 text-left mt-3">Orientation</h4>
+          <h4 className="w-40 text-left mt-3 text-gray-700">Orientation</h4>
           <h5
             className={`
             ${
@@ -110,7 +110,7 @@ const Options = ({
           </h5>
           <h5
             className={`${
-              orientation === ORIENTATION.BLACK ? "bg-gray-200" : ""
+              orientation === ORIENTATION.BLACK ? "bg-gray-300" : ""
             } cursor-pointer px-4 py-3 rounded-md
           `}
             onClick={() => handleOrientation(ORIENTATION.BLACK)}
@@ -118,8 +118,8 @@ const Options = ({
             {capitalCase(ORIENTATION.BLACK)}
           </h5>
         </div>
-        <div className="flex space-x-5 my-5">
-          <h4 className="w-40 text-left mt-3">Board Theme</h4>
+        <div className="flex lg:space-x-5 my-5">
+          <h4 className="w-40 text-left mt-3 text-gray-700">Board Theme</h4>
           <h5
             className={`
             ${
@@ -132,7 +132,7 @@ const Options = ({
           </h5>
           <h5
             className={`${
-              boardTheme === BOARD_THEME.GREEN ? "bg-gray-200" : ""
+              boardTheme === BOARD_THEME.GREEN ? "bg-gray-300" : ""
             } cursor-pointer px-4 py-3 rounded-md
           `}
             onClick={() => setBoardTheme(BOARD_THEME.GREEN)}
@@ -141,8 +141,8 @@ const Options = ({
           </h5>
           <h5
             className={`${
-              boardTheme === BOARD_THEME.SKY ? "bg-gray-200" : ""
-            } cursor-pointer px-4 py-3 rounded-md
+              boardTheme === BOARD_THEME.SKY ? "bg-gray-300" : ""
+            } cursor-pointer px-4 py-3 rounded-md items-center flex
           `}
             onClick={() => setBoardTheme(BOARD_THEME.SKY)}
           >
@@ -150,7 +150,7 @@ const Options = ({
           </h5>
         </div>
         <div className="flex space-x-5 pt-3">
-          <h4 className="w-40 text-left">Show Pieces</h4>
+          <h4 className="w-40 text-left text-gray-700">Show Pieces</h4>
           <Switch
             onChange={handleShowPiece}
             checked={showPieces}
@@ -159,7 +159,9 @@ const Options = ({
           />
         </div>
         <div className="flex space-x-5 my-5 mt-8">
-          <h4 className="w-40 text-left">Show Notations on board</h4>
+          <h4 className="w-40 text-left text-gray-700">
+            Show Notations on board
+          </h4>
           <Switch
             onChange={handleShowNotations}
             checked={showNotations}

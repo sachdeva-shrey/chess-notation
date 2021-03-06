@@ -29,20 +29,22 @@ const Spacer = ({
   };
 
   return (
-    <div className="flex flex-col space-y-5 px-20">
-      <div className="flex flex-col">
-        <h4 className="my-3 text-lg text-gray-800">Guess the notation</h4>
-        <h2 className="text-5xl bg-gray-100 p-8 rounded-md w-32 text-center font-bold">
+    <div className="flex flex-wrap lg:flex-nowrap lg:flex-col space-x-5 lg:space-y-5 lg:space-x-0 px-5 lg:px-20">
+      <div className="flex flex-col flex-1">
+        <h4 className="my-3 text-md lg:text-lg text-gray-800">
+          Guess the notation
+        </h4>
+        <h2 className="text-2xl lg:text-5xl bg-gray-100 py-4 lg:p-8 rounded-md lg:w-32 text-center font-bold">
           {notation}
         </h2>
       </div>
-      <div>
-        <h4 className="my-3 text-lg text-gray-800">Time Left</h4>
-        <h2 className="text-2xl rounded-md">
+      <div className="flex-1 lg:flex-auto">
+        <h4 className="my-3 text-md lg:text-lg text-gray-800">Time Left</h4>
+        <h2 className="text-xl lg:text-2xl rounded-md bg-gray-100 text-center py-4 lg:text-left lg:bg-white lg:py-0">
           <p>{counter}s</p>
         </h2>
       </div>
-      <div className="py-10 flex space-x-5">
+      <div className="lg:py-10 flex justify-center space-x-5 w-full my-5 lg:w-auto lg:my-0 lg:justify-start">
         <button
           className={`bg-black text-white px-8 rounded-md py-3  ${
             timerState

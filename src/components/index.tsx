@@ -25,9 +25,9 @@ const Index = () => {
   const [boardTheme, setBoardTheme] = useState(BOARD_THEME.BROWN);
 
   return (
-    <div className="pb-10 px-10 pt-10 flex flex-col">
-      <div className="flex flex-row">
-        <div className="w-5/12 flex justify-center items-center">
+    <div className="pb-10 lg:px-10 pt-10 flex flex-col">
+      <div className="flex flex-col lg:flex-row">
+        <div className="lg:w-5/12 flex justify-center items-center">
           <Board
             notation={notation}
             setNotation={setNotation}
@@ -44,8 +44,8 @@ const Index = () => {
             boardTheme={boardTheme}
           />
         </div>
-        <div className="flex w-7/12">
-          <div className="w-3/4">
+        <div className="flex flex-col lg:flex-row lg:w-7/12">
+          <div className="lg:w-3/4">
             <Spacer
               notation={notation}
               counter={counter}
@@ -55,7 +55,10 @@ const Index = () => {
               setAnswerCount={setAnswerCount}
             />
           </div>
-          <div className="bg-gray-100">
+          <div className="lg:hidden my-5">
+            <Results answerCount={answerCount} />
+          </div>
+          <div className="bg-gray-100 mx-5 lg:mx-0">
             <Options
               counter={counter}
               setCounter={setCounter}
@@ -74,7 +77,7 @@ const Index = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className="hidden lg:flex">
         <Results answerCount={answerCount} setAnswerCount={setAnswerCount} />
       </div>
     </div>

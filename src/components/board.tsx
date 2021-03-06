@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import Chessboard from "chessboardjsx";
+import { useMediaQuery } from "react-responsive";
 
 import { generateRandomNotation } from "shared/helpers";
-import { BACKGROUND_COLOR, COUNTER_VALUE, BOARD_THEME } from "shared/constants";
+import { BACKGROUND_COLOR } from "shared/constants";
 
 type Props = {
   notation: string;
@@ -36,6 +37,7 @@ const Board = ({
   boardTheme,
 }: Props) => {
   const [squareStyles, setSquareStyles] = useState({});
+  const isTabletOrMobile = useMediaQuery({ maxWidth: 1224 });
 
   useEffect(() => {
     console.log(answerCount);
@@ -88,6 +90,7 @@ const Board = ({
   return (
     <div>
       <Chessboard
+        width={isTabletOrMobile ? 320 : 600}
         position={showPieces ? "start" : ""}
         darkSquareStyle={boardTheme?.lightSquareStyle}
         lightSquareStyle={boardTheme?.darkSquareStyle}
