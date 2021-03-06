@@ -24,9 +24,7 @@ const Results = ({ answerCount }: Props) => {
       </div>
       <div className="flex flex-col flex-1 lg:flex-auto space-y-2">
         <h4 className="text-gray-700 text-sm">Accuracy</h4>
-        <h4>
-          {calculateAccuracy(answerCount.CORRECT, answerCount.INCORRECT)}%
-        </h4>
+        <h4>{calculateAccuracy(answerCount.CORRECT, answerCount.TOTAL)}%</h4>
       </div>
     </div>
   );

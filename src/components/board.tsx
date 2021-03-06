@@ -39,16 +39,8 @@ const Board = ({
   const [squareStyles, setSquareStyles] = useState({});
   const isTabletOrMobile = useMediaQuery({ maxWidth: 1224 });
 
-  useEffect(() => {
-    console.log(answerCount);
-  }, [answerCount]);
-
   const handleSquareClick = (square: string) => {
     if (timerState) {
-      setAnswerCount({
-        ...answerCount,
-        TOTAL: answerCount.TOTAL + 1,
-      });
       if (square === notation) {
         setSquareStyles({
           [square]: { backgroundColor: BACKGROUND_COLOR.CORRECT },
@@ -56,6 +48,7 @@ const Board = ({
         setAnswerCount({
           ...answerCount,
           CORRECT: answerCount.CORRECT + 1,
+          TOTAL: answerCount.TOTAL + 1,
         });
       } else {
         setSquareStyles({
@@ -64,6 +57,7 @@ const Board = ({
         setAnswerCount({
           ...answerCount,
           INCORRECT: answerCount.INCORRECT + 1,
+          TOTAL: answerCount.TOTAL + 1,
         });
       }
 
