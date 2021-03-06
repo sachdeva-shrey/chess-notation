@@ -5,7 +5,7 @@ import Footer from "components/footer";
 function App() {
   return (
     <div className="App">
-      <script src="https://gumroad.com/js/gumroad.js" />
+      <script async src="https://gumroad.com/js/gumroad.js" />
       <Header />
       <Index />
       <Footer />

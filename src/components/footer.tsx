@@ -9,6 +9,7 @@ const Footer = () => {
             className="gumroad-button underline"
             href="https://gum.co/chess-notation"
             target="_blank"
+            rel="noreferrer"
           >
             donating.
           </a>
@@ -24,6 +25,7 @@ const Footer = () => {
             className="gumroad-button underline"
             href="https://github.com/sachdeva-shrey"
             target="_blank"
+            rel="noreferrer"
           >
             @shreysachdeva
           </a>

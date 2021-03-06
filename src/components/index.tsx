@@ -78,7 +78,7 @@ const Index = () => {
         </div>
       </div>
       <div className="hidden lg:flex">
-        <Results answerCount={answerCount} setAnswerCount={setAnswerCount} />
+        <Results answerCount={answerCount} />
       </div>
     </div>
   );

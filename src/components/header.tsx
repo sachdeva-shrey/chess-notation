@@ -15,6 +15,7 @@ const Header = () => {
           className="gumroad-button"
           href="https://gum.co/chess-notation"
           target="_blank"
+          rel="noreferrer"
         >
           <div className="flex items-center space-x-2 bg-gray-100 px-2 py-1 lg:px-6 lg:py-3 rounded-md cursor-pointer">
             <h5 className="text-xs lg:text-sm">Support</h5>
