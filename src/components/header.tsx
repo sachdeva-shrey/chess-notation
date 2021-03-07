@@ -7,10 +7,16 @@ const Header = () => {
         alt="Chess Notation Logo"
       />
       <div className="lg:ml-auto flex justify-center items-center lg:space-x-3">
-        <div className="flex space-x-2 justify-center items-center cursor-pointer underline px-6">
-          <img className="w-auto h-6" src="/github.svg" alt="Github Logo" />
-          <h5 className="text-xs lg:text-sm">Github</h5>
-        </div>
+        <a
+          href="https://github.com/sachdeva-shrey/chess-notation"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div className="flex space-x-2 justify-center items-center cursor-pointer underline px-6">
+            <img className="w-auto h-6" src="/github.svg" alt="Github Logo" />
+            <h5 className="text-xs lg:text-sm">Github</h5>
+          </div>
+        </a>
         <a
           className="gumroad-button"
           href="https://gum.co/chess-notation"
