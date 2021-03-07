@@ -1,46 +1,56 @@
-# Getting Started with Create React App
+<div align="center">
+  <img alt="ChessNotation Logo" src="public/logo-with-text.png" height="56" />
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br>
+<p align="center">
+  Learn Chess Notations to analyse, visualise and review games.
+</p>
+<p align="center">
+crafted with <span style="color: #8b0000;">&hearts;</span> by Shrey Sachdeva.
+</p>
+<p align="center">
+    <img src="https://img.shields.io/badge/version-1.0.0-yellowgreen" alt="version 1.0.0"/>
+    <img src="https://img.shields.io/badge/license-MIT-brightgreen" alt="license MIT"/>
+    <img src="https://img.shields.io/badge/author-Shrey%20Sachdeva-red" alt="author SRMKZILLA"/>
+</p>
 
-## Available Scripts
+## Preview 📺
 
-In the project directory, you can run:
+<div align="center">
+  <img alt="Screenshot" src="public/screenshot.png" />
+</div>
 
-### `yarn start`
+## Development 🔧
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**Install dependencies**
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```
+$ yarn
+```
 
-### `yarn test`
+**Create a production build**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+$ yarn build
+```
 
-### `yarn build`
+## License 📜
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`ChessNotation` is available under the MIT license. See the `LICENSE` file for more info.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Contributing 🤝
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Please read `Contributing.md` for details on our code of conduct, and the process for submitting pull requests to us.
 
-### `yarn eject`
+## Shout outs 💥
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+This project wouldn't have been possible without this amazing project — [chessboardjsx](https://github.com/willb335/chessboardjsx) 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Forking this repo 🚨
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Many people have contacted me asking if they can use this code for their own websites. The answer to that question is usually "yes", with attribution. There are some cases, such as using this code for a business or something that is greater than a personal project, that I may be less comfortable saying yes to. If in doubt, please don't hesitate to ask me.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+I value keeping this site open source, but as you all know, _**plagiarism is bad**_. I spent a non-negligible amount of effort developing, designing to build this project! All I ask is to not claim this effort as your own.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+So, feel free to fork this repo. If you do, please just give us proper credit by linking back to this website, https://chessnotation.xyz. Refer to this handy [quora post](https://www.quora.com/Is-it-bad-to-copy-other-peoples-code) if you're not sure what to do. Thanks!
