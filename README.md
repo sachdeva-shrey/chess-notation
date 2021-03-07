@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="ChessNotation Logo" src="public/logo-with-text.png" height="56" />
+  <img alt="ChessNotation Logo" src="public/logo-with-text-4x.png" height="56" />
 </div>
 
 <br>
@@ -45,7 +45,7 @@ Please read `Contributing.md` for details on our code of conduct, and the proces
 
 ## Shout outs 💥
 
-This project wouldn't have been possible without this amazing project — [chessboardjsx](https://github.com/willb335/chessboardjsx) 
+This project wouldn't have been possible without this amazing project — [chessboardjsx](https://github.com/willb335/chessboardjsx)
 
 ## Forking this repo 🚨
 

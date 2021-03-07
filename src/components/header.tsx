@@ -3,7 +3,7 @@ const Header = () => {
     <div className="my-3 mx-2 lg:mx-10 flex">
       <img
         className="w-auto h-6 lg:h-8"
-        src="/logo-with-text.png"
+        src="/logo-with-text-4x.png"
         alt="Chess Notation Logo"
       />
       <div className="lg:ml-auto flex justify-center items-center lg:space-x-3">
